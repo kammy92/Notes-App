@@ -49,7 +49,7 @@ yargs.command({
 yargs.command({
     command: 'list',
     describe: 'List all the notes',
-    handler: notes.listNotes()
+    handler: argv => notes.listNotes()
 })
 
 yargs.parse()
